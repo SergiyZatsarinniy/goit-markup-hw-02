@@ -1,18 +1,22 @@
 :root {
   --logo-font: 'Raleway', sans-serif;
   --action-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
   --primary-text-color: #2e2f42;
   --secondary-text-color: #434455;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --third-text-color: #ffffff;
 
-  --team-bg-color: #f4f4fd;
+  --main-bg-color: #ffffff;
   --border-bg-color: #2e2f42;
 }
 
 body {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--main-bg-color);
 }
 
 .link {
@@ -62,13 +66,14 @@ body {
 }
 
 .logo {
-  color: #4d5ae5;
+  color: var(--action-color);
   font-family: var(--logo-font);
   font-size: 18px;
   text-decoration: none;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 .logo-header {
@@ -76,14 +81,14 @@ body {
 }
 
 .logo-footer {
-  color: #f4f4fd;
+  color: var(--light-color);
 }
 
 .button-studio {
   font-family: inherit;
   font-size: 16px;
-  background-color: #4d5ae5;
-  color: #ffffff;
+  background-color: var(--action-color);
+  color: var(--third-text-color);
   cursor: pointer;
   text-align: center;
   letter-spacing: 0.04em;
@@ -93,7 +98,7 @@ body {
 
 .button-studio:hover,
 .button-studio:focus {
-  background-color: #404bbf;
+  background-color: var(--pressed-state-color);
 }
 
 .hero-background {
@@ -101,7 +106,7 @@ body {
 }
 
 .main-title {
-  color: #ffffff;
+  color: var(--third-text-color);
   font-size: 56px;
   font-weight: 700;
   line-height: 1.07;
@@ -133,7 +138,7 @@ body {
 }
 
 .our-team-card {
-  background-color: #ffffff;
+  background-color: var(--light-color);
   cursor: pointer;
 }
 
@@ -160,13 +165,13 @@ body {
 }
 
 .footer-text {
-  color: #e7e9fc;
+  color: var(--accent-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
 .btn-portfolio {
-  background-color: #f4f4fd;
+  background-color: var(--light-color);
   color: var(--action-color);
   cursor: pointer;
   font-family: inherit;
@@ -175,14 +180,14 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--accent-color);
   border-radius: 4px;
 }
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  background-color: #404bbf;
-  color: #ffffff;
+  background-color: var(--pressed-state-color);
+  color: var(--third-text-color);
 }
 
 .project-card-title {
